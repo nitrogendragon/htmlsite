@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="main-header">
-        <nav class="main-nav">
+        <nav class="nav main-nav">
             <ui>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
@@ -19,97 +19,107 @@
     </header>
     <section class="container content-section">
         <h2 class="section-header">MUSIC</h2>
-        <div class="shop-item">
-            <span>Destroyer</span>
-            <img src="Images/destroyer.jfif">
-            <div>
-                <Span>$142.57</Span>
-                <button role="button">ADD TO CART</button>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Destroyer</span>
+                <img class="shop-item-image"src="Images/destroyer.jfif">
+                <div class="shop-item-details">
+                    <Span class="shop-item-price">$142.57</Span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO 
+                    CART</button>
+                </div>
             </div>
-        </div>
-        <div>
-            <span>Discography</span>
-            <img src="Images/Discography.jfif">
-            <div>
-                <Span>$142.57</Span>
-                <button role="button">ADD TO CART</button>
+            <div class="shop-item">
+                <span class="shop-item-title">Discography</span>
+                <img class="shop-item-image" src="Images/Discography.jfif">
+                <div class="shop-item-details">
+                    <Span class="shop-item-price">$142.57</Span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO 
+                    CART</button>
+                </div>
             </div>
-        </div>
-        <div>
-            <span>Hotter Than Hell</span>
-            <img src="Images/HotterThanHell.jfif">
-            <div>
-                <Span>$142.57</Span>
-                <button role="button">ADD TO CART</button>
+            <div class="shop-item">
+                <span class="shop-item-title">Hotter Than Hell</span>
+                <img class="shop-item-image" src="Images/HotterThanHell.jfif">
+                <div class="shop-item-details">
+                    <Span class="shop-item-price">$142.57</Span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO 
+                    CART</button>
+                </div>
             </div>
-        </div>
-        <div>
-            <span>Killers</span>
-            <img src="Images/Killers.jfif">
-            <div>
-                <Span>$142.57</Span>
-                <button role="button">ADD TO CART</button>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2>MERCH</h2>
-        <div>
-            <div>
-                <strong>Card Packs</strong>
-            </div>
-            <img src="Images/Trading Card Pack.jfif">
-            <div>
-                <Span>$7.99</Span>
-                <button role="button">ADD TO CART</button>
-            </div>
-        </div>
-        <div>
-            <div>
-                <strong>Pinball Machine</strong>
-            </div>
-            <img src="Images/Pinball.jfif">
-            <div>
-                <Span>$11,257.57</Span>
-                <button role="button">ADD TO CART</button>
+            <div class="shop-item">
+                <span class="shop-item-title">Killers</span>
+                <img class="shop-item-image" src="Images/Killers.jfif">
+                <div class="shop-item-details">
+                    <Span class="shop-item-price">$142.57</Span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO 
+                    CART</button>
+                </div>
             </div>
         </div>
     </section>
-    <section>
-        <h2>CART</h2>
-        <div>
-            <strong>ITEM</strong>
-            &lt;&gt;
-            <strong>PRICE</strong>
-            &lt;&gt;
-            <strong>QUANTITY</strong>
+    <section class="container content-section">
+        <h2 class="section-header">MERCH</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Card Packs</span>
+                <img class="shop-item-image" src="Images/Trading Card Pack.jfif">
+                <div class="shop-item-details">
+                    <Span class="shop-item-price">$7.99</Span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO 
+                    CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Pinball Machine</span>
+                <img class="shop-item-image" src="Images/Pinball.jfif">
+                <div class="shop-item-details">
+                    <Span class="shop-item-price">$11,257.57</Span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO 
+                    CART</button>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="Images/Trading Card Pack.jfif" width="100" height="100">
-            <span>Card Packs</span>
-            &lt;&gt;
-            <span>$7.99</span>
-            &lt;&gt;
-            <input type="number" value="1">
-            <button role="button">REMOVE</button>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header 
+            cart-column">ITEM</span>
+            <span class="cart-price cart-header 
+            cart-column">PRICE</span>
+            <span class="cart-quantity cart-header 
+            cart-column">QUANTITY</span>
         </div>
-        <div>
-            <img src="Images/Pinball.jfif" width="100" height="100">
-            <span>Pinball</span>
-            &lt;&gt;
-            <span>$11,257.57</span>
-            &lt;&gt;
-            <input type="number" value="2">
-            <button role="button">REMOVE</button>
+        <div class="cart-items">
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="Images/Trading Card Pack.jfif" width="100" height="100">
+                    <span class="cart-item-title">Card Packs</span>
+                </div>
+                <span class="cart-price cart-column">$7.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+            <div class="cart-row">
+                <div class="cart-item cart-column"> 
+                    <img class="cart-item-image" src="Images/Pinball.jfif" width="100" height="100">
+                    <span class="cart-item-title">Pinball</span>
+                </div>
+                <span class="cart-price cart-column">$11,257.57</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="2">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
         </div>
-        <hr>
-        <div>
-            <strong>Total</strong>
-            <span>$29.97</span>
+        <div class="cart-total">
+            <span class="cart-total-title">Total</span>
+            <span class="cart-total-price">$29.97</span>
         </div>
-        <div>
-            <button role="button">PURCHASE</button>
-        </div>
+        <button class="btn btn-primary btn-purchase" role="button">PURCHASE</button>
     </section>
     <footer class="main-footer">
         <div class="container main-footer-container">
