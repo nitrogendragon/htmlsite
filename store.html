@@ -4,25 +4,23 @@
 <head>
     <meta name="description" content="This is the description" charset="utf-8" />
     <title>KISS | Store</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="main-header">
+        <nav class="main-nav">
             <ui>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="store.html">STORE</a></li>
             </ui>
         </nav>
-        <hr>
-        <h1>KISS!</h1>
+        <h1 class="band-name band-name-large">KISS!</h1>
     </header>
-    <section>
-        <h2>MUSIC</h2>
-        <div>
-            <div>
-                <strong>Destroyer</strong>
-            </div>
+    <section class="container content-section">
+        <h2 class="section-header">MUSIC</h2>
+        <div class="shop-item">
+            <span>Destroyer</span>
             <img src="Images/destroyer.jfif">
             <div>
                 <Span>$142.57</Span>
@@ -30,9 +28,7 @@
             </div>
         </div>
         <div>
-            <div>
-                <strong>Discography</strong>
-            </div>
+            <span>Discography</span>
             <img src="Images/Discography.jfif">
             <div>
                 <Span>$142.57</Span>
@@ -40,9 +36,7 @@
             </div>
         </div>
         <div>
-            <div>
-                <strong>Hotter Than Hell</strong>
-            </div>
+            <span>Hotter Than Hell</span>
             <img src="Images/HotterThanHell.jfif">
             <div>
                 <Span>$142.57</Span>
@@ -50,9 +44,7 @@
             </div>
         </div>
         <div>
-            <div>
-                <strong>Killers</strong>
-            </div>
+            <span>Killers</span>
             <img src="Images/Killers.jfif">
             <div>
                 <Span>$142.57</Span>
@@ -119,26 +111,28 @@
             <button role="button">PURCHASE</button>
         </div>
     </section>
-    <footer>
-        <h3>KISS</h3>
-        <ul>
-            <li>
-                <a href="https://www.facebook.com/KISS/" target="_blank">
-                    <img src="Images/facebook.png">
-                </a>
-            </li>
-            <li>
-                <a href="https://open.spotify.com/artist/07XSN3sPlIlB2L2XNcTwJw" target="_blank">
-                    <img src="Images/spotify.png">
-                </a>
-            </li>
-                
-            <li>
-                <a href="https://www.youtube.com/channel/UCyOw2FDjfQOFQH7paKxNVvA" target="_blank">
-                    <img src="Images/youtube.jfif">
-                </a>
-            </li>
-        </ul>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="band-name">KISS</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.facebook.com/KISS/" target="_blank">
+                        <img src="Images/facebook.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/artist/07XSN3sPlIlB2L2XNcTwJw" target="_blank">
+                        <img src="Images/spotify.png">
+                    </a>
+                </li>
+                    
+                <li>
+                    <a href="https://www.youtube.com/channel/UCyOw2FDjfQOFQH7paKxNVvA" target="_blank">
+                        <img src="Images/youtube.jfif">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
