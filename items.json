@@ -1,0 +1,43 @@
+{
+    "music": [
+        {
+            "id": 1,
+            "name": "Destroyer",
+            "price": 1299,
+            "imgName": "destroyer.jfif"
+        },
+        {
+            "id": 2,
+            "name": "Discography",
+            "price": 1299,
+            "imgName": "Discography.jfif"
+        },
+        {
+            "id": 3,
+            "name": "Hotter Than Hell",
+            "price": 1299,
+            "imgName": "HotterThanHell.jfif"
+        },
+        {
+            "id": 4,
+            "name": "Killers",
+            "price": 1299,
+            "imgName": "Killers.jfif"
+        }
+
+    ],
+    "merch": [
+        {
+            "id": 5,
+            "name": "Card Pack",
+            "price": 799,
+            "imgName": "TradingCardPack.jfif"
+        },
+        {
+            "id": 6,
+            "name": "Pinball Machine",
+            "price": 1125757,
+            "imgName": "Pinball.jfif"
+        }
+    ]
+}

@@ -21,50 +21,24 @@
     <section class="container content-section">
         <h2 class="section-header">MUSIC</h2>
         <div class="shop-items">
-            <div class="shop-item">
-                <span class="shop-item-title">Destroyer</span>
-                <img class="shop-item-image"src="Images/destroyer.jfif">
-                <div class="shop-item-details">
-                    <Span class="shop-item-price">$142.57</Span>
-                    <button class="btn btn-primary shop-item-button" role="button">ADD TO 
-                    CART</button>
-                </div>
-            </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Discography</span>
-                <img class="shop-item-image" src="Images/Discography.jfif">
-                <div class="shop-item-details">
-                    <Span class="shop-item-price">$142.57</Span>
-                    <button class="btn btn-primary shop-item-button" role="button">ADD TO 
-                    CART</button>
-                </div>
-            </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Hotter Than Hell</span>
-                <img class="shop-item-image" src="Images/HotterThanHell.jfif">
-                <div class="shop-item-details">
-                    <Span class="shop-item-price">$142.57</Span>
-                    <button class="btn btn-primary shop-item-button" role="button">ADD TO 
-                    CART</button>
-                </div>
-            </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Killers</span>
-                <img class="shop-item-image" src="Images/Killers.jfif">
-                <div class="shop-item-details">
-                    <Span class="shop-item-price">$142.57</Span>
-                    <button class="btn btn-primary shop-item-button" role="button">ADD TO 
-                    CART</button>
-                </div>
-            </div>
-        </div>
+            <% items.music.forEach(function(item){ %>
+                <div class="shop-item" data-item-id="<%= item.id %>">
+                    <span class="shop-item-title"><%= item.name %></span>
+                    <img class="shop-item-image"src="Images/<%= item.imgName %>">
+                    <div class="shop-item-details">
+                        <Span class="shop-item-price">$<%= item.price / 100 %></Span>
+                        <button class="btn btn-primary shop-item-button" role="button">ADD TO 
+                        CART</button>
+                    </div>
+                </div>     
+            <% }) %>
     </section>
     <section class="container content-section">
         <h2 class="section-header">MERCH</h2>
         <div class="shop-items">
             <div class="shop-item">
                 <span class="shop-item-title">Card Packs</span>
-                <img class="shop-item-image" src="Images/Trading Card Pack.jfif">
+                <img class="shop-item-image" src="Images/TradingCardPack.jfif">
                 <div class="shop-item-details">
                     <Span class="shop-item-price">$7.99</Span>
                     <button class="btn btn-primary shop-item-button" role="button">ADD TO 
