@@ -5,7 +5,11 @@
     <meta name="description" content="This is the description" charset="utf-8" />
     <title>KISS | Store</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="store.js" async></script>
+    <script src="https://checkout.stripe.com/checkout.js" defer></script>
+    <script>
+        var stripePublicKey = '<%= stripePublicKey %>'
+    </script>
+    <script src="store.js" defer></script>
 </head>
 <body>
     <header class="main-header">
@@ -32,28 +36,22 @@
                     </div>
                 </div>     
             <% }) %>
+        </div>
     </section>
     <section class="container content-section">
         <h2 class="section-header">MERCH</h2>
         <div class="shop-items">
-            <div class="shop-item">
-                <span class="shop-item-title">Card Packs</span>
-                <img class="shop-item-image" src="Images/TradingCardPack.jfif">
-                <div class="shop-item-details">
-                    <Span class="shop-item-price">$7.99</Span>
-                    <button class="btn btn-primary shop-item-button" role="button">ADD TO 
-                    CART</button>
-                </div>
-            </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Pinball Machine</span>
-                <img class="shop-item-image" src="Images/Pinball.jfif">
-                <div class="shop-item-details">
-                    <Span class="shop-item-price">$11,257.57</Span>
-                    <button class="btn btn-primary shop-item-button" role="button">ADD TO 
-                    CART</button>
-                </div>
-            </div>
+            <% items.merch.forEach(function(item){ %>
+                <div class="shop-item" data-item-id="<%= item.id %>">
+                    <span class="shop-item-title"><%= item.name %></span>
+                    <img class="shop-item-image"src="Images/<%= item.imgName %>">
+                    <div class="shop-item-details">
+                        <Span class="shop-item-price">$<%= item.price / 100 %></Span>
+                        <button class="btn btn-primary shop-item-button" role="button">ADD TO 
+                        CART</button>
+                    </div>
+                </div>     
+            <% }) %>
         </div>
     </section>
     <section class="container content-section">
